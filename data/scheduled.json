@@ -1,0 +1,83 @@
+{
+  "tournamentId": "tour_1792069788982",
+  "tournamentName": "STEPH KNOCKOUT CUP 2026",
+  "stages": [
+    {
+      "stageName": "Quarti di Finale",
+      "matches": [
+        {
+          "matchCode": "QF1",
+          "label": "Quarto 1",
+          "homeName": "Solaris FC",
+          "awayName": "Vulcania",
+          "scheduledDate": "Lunedì 12/10/2026 - Ore 21:00",
+          "locationName": "Centro Sportivo Lambrate - Campo 1",
+          "mapsUrl": "https://maps.google.com"
+        },
+        {
+          "matchCode": "QF2",
+          "label": "Quarto 2",
+          "homeName": "Aura Viola",
+          "awayName": "Smeraldo FC",
+          "scheduledDate": "Mercoledì 14/10/2026 - Ore 21:30",
+          "locationName": "Centro Sportivo Lambrate - Campo 2",
+          "mapsUrl": "https://maps.google.com"
+        }
+      ]
+    },
+    {
+      "stageName": "Semifinali",
+      "matches": [
+        {
+          "matchCode": "SF1",
+          "label": "Semifinale 1",
+          "homeFromWinner": "QF1",
+          "awayName": "Oceanic Blu",
+          "scheduledDate": "Lunedì 19/10/2026 - Ore 21:00",
+          "locationName": "Centro Sportivo Lambrate - Campo 1",
+          "mapsUrl": "https://maps.google.com"
+        },
+        {
+          "matchCode": "SF2",
+          "label": "Semifinale 2",
+          "homeFromWinner": "QF2",
+          "awayName": "Real Bianco",
+          "scheduledDate": "Martedì 20/10/2026 - Ore 21:30",
+          "locationName": "Sporting Club San Siro - Campo A",
+          "mapsUrl": "https://maps.google.com"
+        }
+      ]
+    },
+    {
+      "stageName": "Finalissima 1° / 2° Posto",
+      "isFinal": true,
+      "matches": [
+        {
+          "matchCode": "FIN",
+          "label": "Finale",
+          "homeFromWinner": "SF1",
+          "awayFromWinner": "SF2",
+          "scheduledDate": "Domenica 25/10/2026 - Ore 21:00",
+          "locationName": "Arena Centrale San Siro",
+          "mapsUrl": "https://maps.google.com"
+        }
+      ]
+    }
+    ,
+    {
+      "stageName": "Finalina 3° / 4° Posto",
+      "isThirdPlace": true,
+      "matches": [
+        {
+          "matchCode": "FIN34",
+          "label": "Finale 3° Posto",
+          "homeFromLoser": "SF1",
+          "awayFromLoser": "SF2",
+          "scheduledDate": "Domenica 25/10/2026 - Ore 19:30",
+          "locationName": "Arena Centrale San Siro",
+          "mapsUrl": "https://maps.google.com"
+        }
+      ]
+    }
+  ]
+}
