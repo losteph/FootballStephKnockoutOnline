@@ -9,9 +9,9 @@ let playersData = [];
 let currentTournamentId = null;
 
 const GRADE_VALUES = {
-  "A+": 95, "A": 90, "A-": 85,
-  "B+": 80, "B": 75, "B-": 70,
-  "C+": 65, "C": 60, "C-": 55
+  "A+": 99, "A": 93, "A-": 86,
+  "B+": 82, "B": 77, "B-": 73,
+  "C+": 66, "C": 62, "C-": 55
 };
 
 const ROLE_WEIGHTS = {
