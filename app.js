@@ -785,7 +785,14 @@ function renderMatchPagelle(m) {
       </div>
     `;
 
-    (roster || []).forEach(p => {
+    let benchDividerAdded = false;
+    const sortedRoster = [...(roster || [])].sort((a, b) => (b.inField !== false ? 1 : 0) - (a.inField !== false ? 1 : 0));
+
+    sortedRoster.forEach(p => {
+      if (p.inField === false && !benchDividerAdded) {
+        html += `<div class="bench-divider"><span>Panchina</span></div>`;
+        benchDividerAdded = true;
+      }
       const dbP = getPlayerFromDb(p.dbId, p.name, p.isGK);
       const role = p.isGK ? "POR" : (dbP.role || "CEN");
       const vote = ratings[String(p.dbId)] ?? "SV";
